@@ -30,7 +30,7 @@
 
 .exp-card {
   background: white;
-  border: 1px solid #f1d1dc;
+  /* border: 1px solid #f1d1dc; */
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
@@ -70,8 +70,7 @@
 }
 
 .exp-category {
-  background: #f3d7e5;
-  color: #7a3b69;
+  color: #333;
   padding: 2px 8px;
   border-radius: 999px;
   font-size: 0.75rem;

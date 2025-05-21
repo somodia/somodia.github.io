@@ -55,14 +55,14 @@ const ExperiencePage = () => {
 
       <div className="experience-grid">
         {experiences.map((exp, i) => (
-         <div className="exp-card" key={i}>
+         <div style={{border: "1px solid", borderColor: theme.headerColor}} className="exp-card" key={i}>
       <img className="exp-logo" src={exp.logo} alt={`${exp.org} logo`} />
       <div className="exp-card-content">
         <div className="exp-title">{exp.title}</div>
         <div className="exp-org">{exp.org}</div>
         <div className="exp-time">{exp.time}</div>
         {exp.categories.map((cat, idx) => (
-          <span className="exp-category" key={idx}>
+          <span style = {{backgroundColor: theme.headerColor}}className="exp-category" key={idx}>
             {cat}
           </span>
         ))}
