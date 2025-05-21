@@ -1,0 +1,86 @@
+
+
+.section-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #7a3b69;
+}
+
+.theme-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+
+.theme-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.exp-card {
+  background: white;
+  border: 1px solid #f1d1dc;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exp-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.exp-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.exp-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.exp-org {
+  font-size: 0.95rem;
+  color: #7a3b69;
+}
+
+.exp-time {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.exp-category {
+  background: #f3d7e5;
+  color: #7a3b69;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-top: 4px;
+  margin-right: 6px;
+}
+
+.exp-description {
+  font-size: 0.9rem;
+  margin-top: 6px;
+}

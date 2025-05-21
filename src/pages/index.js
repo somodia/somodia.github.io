@@ -8,11 +8,13 @@ import { PageLayout } from "../components/PageLayout";
 import { Hero } from "../components/Hero";
 import { TextWithLink } from "../components/TextWithLink";
 
+import "../styles/main.css";
+
 const themes = [
-  { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF" }, // blue
-  { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc" }, // green
-  { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5" }, // yellow
   { backgroundColor: "#fffbfc", color: "#F67BAE", headerColor: "#ffeaee" }, // pink
+  { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5" }, // yellow
+  { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc" }, // green
+  { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF" }, // blue
   { backgroundColor: "#fefaff", color: "#AA4CC2", headerColor: "#f0dcfd" }, // purple
 ];
 
@@ -40,14 +42,24 @@ const IndexPage = () => {
           <div>
             <h3 style={{ marginBottom: "10px" }}>About me</h3>
             <p style={{ fontSize: "14px", marginBottom: "20px" }}>
-              I'm Alexandra, an engineer and musician at the University of Southern California. Welcome to my online diary!
+              I'm Alexandra, an engineer and pharmacology student at the University of Southern California. Welcome to my corner of the internet!
             </p>
             <div>
-              <h3>Latest shenanigans</h3>
+              <h3>Currently into: </h3>
+              <div className="interest-tags">
+                <span style={{backgroundColor: theme.color}} className="tag">tomasulo's algorithm</span>
+                <span style={{backgroundColor: theme.color}} className="tag">clarins lip oil</span>
+                <span style={{backgroundColor: theme.color}} className="tag">precision medicine</span>
+                <span style={{backgroundColor: theme.color}} className="tag">matcha macchiatos</span>
+                <span style={{backgroundColor: theme.color}} className="tag">Falsettos (2016)</span>
+              </div>
+              <h3>Quick Links</h3>
               <ul style={{ listStyleType: "none", paddingLeft: "0", fontSize: "14px", lineHeight: "1.8" }}>
-                <li>Makers Fall 2024 Showcase</li>
-                <li>MTR Fall 2024 Show: Falsettos</li>
-                <li>Summer in North Carolina</li>
+                <li>LinkedIn</li>
+                <li>Curriculum Vitae</li>
+                <li>Firmware/Hardware Resume</li>
+                <li>Biomedical Resume</li>
+                <li>Beauty NPD Resume</li>
               </ul>
             </div>
           </div>
@@ -65,7 +77,7 @@ const IndexPage = () => {
                       <p className="hero-description">
                         I'm an engineering student at the University of Southern California with a passion for using technology to make the world better for all.
                       </p>
-                      <p className="hero-description">I like many things TBD.</p>
+                      <p className="hero-description">I love everything from embedded systems to neuroscience to marketing to beauty and skincare! I'm confident I'd be more than pleased with a career in any (or all!) of these fields. </p>
 
                       <p className="hero-description">
                         On this site, you can find my{" "}
@@ -81,7 +93,7 @@ const IndexPage = () => {
                           journal
                         </TextWithLink>
                         , or learn more{" "}
-                        <TextWithLink to="/me" theme={theme}>
+                        <TextWithLink to="/about" theme={theme}>
                           about me
                         </TextWithLink>
                         .

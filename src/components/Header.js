@@ -56,7 +56,7 @@ export const Header = ({ theme }) => {
             padding: 0,
           }}
         >
-          {["About", "Experience", "Projects", "Digital Journal"].map((item, index) => (
+          {["About", "Experience", "Projects", "Creative Portfolio", "Digital Journal"].map((item, index) => (
             <li key={index}>
               <Link
                 to={`/${item.toLowerCase().replace(" ", "-")}`}
