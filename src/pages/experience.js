@@ -12,11 +12,11 @@ import "../styles/experience.css";
 import { experiences } from '../components/ExperienceHelper.js'
 
 const themes = [
-  { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF"}, // blue
-  { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc"}, // green
-  { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5" }, // yellow
-  { backgroundColor: "#fffbfc", color: "#F67BAE", headerColor: "#ffeaee" }, // pink
-  { backgroundColor: "#fefaff", color: "#AA4CC2", headerColor: "#f0dcfd" }, // purple
+  { backgroundColor: "#fffbfc", color: "#F67BAE", headerColor: "#ffeaee", darkColor: "#502939" }, // pink
+  { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5", darkColor: "#29260f" }, // yellow
+  { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc", darkColor: "#234024"}, // green
+  { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF", darkColor: "#1c4554" }, // blue
+  { backgroundColor: "#fefaff", color: "#AA4CC2", headerColor: "#f0dcfd", darkColor: "#43184d" }, // purple
 ];
 
 const ExperiencePage = () => {
@@ -29,7 +29,7 @@ const ExperiencePage = () => {
         <PageLayout>
 
             <div>
-      <div className="section-header">Experience</div>
+      <div style={{color: theme.darkColor}} className="section-header">Experience</div>
 
       <div style={{ marginTop: "20px", display: "flex", gap: "15px", justifyContent: "center", alignItems: "center" }}>
                       {themes.map((t, index) => (
@@ -53,28 +53,32 @@ const ExperiencePage = () => {
                       ))}
                     </div>
 
-      <div className="experience-grid">
-        {experiences.map((exp, i) => (
-         <div style={{border: "1px solid", borderColor: theme.headerColor}} className="exp-card" key={i}>
-      <img className="exp-logo" src={exp.logo} alt={`${exp.org} logo`} />
-      <div className="exp-card-content">
-        <div className="exp-title">{exp.title}</div>
-        <div className="exp-org">{exp.org}</div>
-        <div className="exp-time">{exp.time}</div>
-        {exp.categories.map((cat, idx) => (
-          <span style = {{backgroundColor: theme.headerColor}}className="exp-category" key={idx}>
-            {cat}
-          </span>
+<div className = "experience-grid">
+{experiences.map((experiences, i) => (
+<div className="exp-card" key={i}>
+  <div className="exp-top">
+    <img className="exp-logo" src={experiences.logo} alt={`${experiences.org} logo`} />
+    <div className="exp-card-meta">
+      <div className="exp-title">{experiences.title}</div>
+      <div className="exp-org">{experiences.org}</div>
+      <div className="exp-time">{experiences.time}</div>
+      <div className="exp-categories">
+        {experiences.categories.map((cat, idx) => (
+          <span style={{backgroundColor: theme.headerColor, color: theme.darkColor }}className="exp-category" key={idx}>{cat}</span>
         ))}
-        <ul className="exp-description">
-          {exp.description.map((line, j) => (
-            <li key={j}>{line}</li>
-          ))}
-        </ul>
       </div>
     </div>
-        ))}
-      </div>
+  </div>
+
+  <ul className="exp-description">
+    {experiences.description.map((line, j) => (
+      <li key={j}>{line}</li>
+    ))}
+  </ul>
+</div>
+))}
+</div>
+
     </div>
         </PageLayout>
         </div>

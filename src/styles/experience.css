@@ -2,7 +2,7 @@
 
 .section-header {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #7a3b69;
@@ -30,20 +30,19 @@
 
 .exp-card {
   background: white;
-  /* border: 1px solid #f1d1dc; */
+  border: 1px solid #f1d1dc;
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
 }
 
-.exp-card-content {
+.exp-top {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1;
+  gap: 12px;
+  align-items: flex-start;
 }
 
 .exp-logo {
@@ -54,32 +53,41 @@
   margin-top: 4px;
 }
 
-.exp-title {
-  font-weight: 600;
-  font-size: 1.1rem;
+.exp-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.exp-org {
-  font-size: 0.95rem;
-  color: #7a3b69;
-}
-
-.exp-time {
-  font-size: 0.85rem;
-  color: #999;
+.exp-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
 }
 
 .exp-category {
-  color: #333;
   padding: 2px 8px;
   border-radius: 999px;
   font-size: 0.75rem;
+  white-space: nowrap;
   display: inline-block;
-  margin-top: 4px;
-  margin-right: 6px;
 }
 
 .exp-description {
   font-size: 0.9rem;
   margin-top: 6px;
+  margin-left: 0; /* ensures it aligns with left of card */
+}
+
+.exp-org {
+    font-size: 0.95rem;
+}
+.exp-time {
+    font-size: 0.85rem;
+}
+
+.exp-title {
+    font-weight: 600;
+    font-size: 1.1rem;
 }

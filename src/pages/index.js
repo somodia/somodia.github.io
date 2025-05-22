@@ -11,11 +11,11 @@ import { TextWithLink } from "../components/TextWithLink";
 import "../styles/main.css";
 
 const themes = [
-  { backgroundColor: "#fffbfc", color: "#F67BAE", headerColor: "#ffeaee" }, // pink
-  { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5" }, // yellow
-  { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc" }, // green
-  { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF" }, // blue
-  { backgroundColor: "#fefaff", color: "#AA4CC2", headerColor: "#f0dcfd" }, // purple
+  { backgroundColor: "#fffbfc", color: "#F67BAE", headerColor: "#ffeaee", darkColor: "#502939" }, // pink
+  { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5", darkColor: "#29260f" }, // yellow
+  { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc", darkColor: "#234024"}, // green
+  { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF", darkColor: "#1c4554" }, // blue
+  { backgroundColor: "#fefaff", color: "#AA4CC2", headerColor: "#f0dcfd", darkColor: "#43184d" }, // purple
 ];
 
 const IndexPage = () => {
