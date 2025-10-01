@@ -10,11 +10,11 @@ import { Hero } from '../components/Hero'
 import { TextWithLink } from '../components/TextWithLink'
 
 const themes = [
-  { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF"}, // blue
-  { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc"}, // green
-  { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5" }, // yellow
   { backgroundColor: "#fffbfc", color: "#F67BAE", headerColor: "#ffeaee" }, // pink
-  { backgroundColor: "#fefaff", color: "#AA4CC2", headerColor: "#f0dcfd" }, // purple
+  { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5" }, // yellow
+  { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc"}, // green
+  { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF"}, // blue
+  { backgroundColor: "#fefaff", color: "#B674D6", headerColor: "#f0dcfd" }, // purple
 ];
 
 const AboutPage = () => {
@@ -115,8 +115,8 @@ const AboutPage = () => {
                       a new area of study (hence the pharmacology double major!), or even just a new coffee shop (
                         <TextWithLink to='https://alchemistcp.com' theme={theme}>this one's</TextWithLink>{' '}my favorite right now).
                       To see more of what I'm getting up to, check out my{' '}
-                      <TextWithLink to="/blog" theme={theme}>experience</TextWithLink> and my{' '}
-                      <TextWithLink to="/digital journal" theme={theme}>digital journal</TextWithLink>!
+                      <TextWithLink to="/experience" theme={theme}>experience</TextWithLink> and my{' '}
+                      <TextWithLink to="/digitaljournal" theme={theme}>digital journal</TextWithLink>!
 
                     </p>
                   </div>

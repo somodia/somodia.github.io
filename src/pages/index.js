@@ -15,7 +15,7 @@ const themes = [
   { backgroundColor: "#fffffd", color: "#F1DE5D", headerColor: "#fdf6c5", darkColor: "#29260f" }, // yellow
   { backgroundColor: "#fdfffd", color: "#78D87C", headerColor: "#cae8cc", darkColor: "#234024"}, // green
   { backgroundColor: "#fbfeff", color: "#48C7F6", headerColor: "#D1F3FF", darkColor: "#1c4554" }, // blue
-  { backgroundColor: "#fefaff", color: "#AA4CC2", headerColor: "#f0dcfd", darkColor: "#43184d" }, // purple
+  { backgroundColor: "#fefaff", color: "#B674D6", headerColor: "#f0dcfd", darkColor: "#43184d" }, // purple
 ];
 
 const IndexPage = () => {
@@ -81,7 +81,7 @@ const IndexPage = () => {
 
                       <p className="hero-description">
                         On this site, you can find my{" "}
-                        <TextWithLink to="/blog" theme={theme}>
+                        <TextWithLink to="/experience" theme={theme}>
                           experience
                         </TextWithLink>{" "}
                         and{" "}
@@ -89,7 +89,7 @@ const IndexPage = () => {
                           projects
                         </TextWithLink>
                         , read some of my{" "}
-                        <TextWithLink to="/digital journal" theme={theme}>
+                        <TextWithLink to="/digitaljournal" theme={theme}>
                           journal
                         </TextWithLink>
                         , or learn more{" "}
