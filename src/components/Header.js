@@ -12,7 +12,6 @@ export const Header = ({ theme }) => {
         padding: "20px 40px", // Adjust padding as needed
         backgroundColor: theme.headerColor, // custom color based on theme
         borderBottom: "1px solid #A8A6A6", // Optional border for visual separation
-        position: "sticky", // Keep header at the top when scrolling
         top: 0,
         zIndex: 1000,
       }}
@@ -56,7 +55,7 @@ export const Header = ({ theme }) => {
             padding: 0,
           }}
         >
-          {["About", "Experience", "Projects", "Digital Journal"].map((item, index) => (
+          {["About", "Experience", "Projects", "Creative Portfolio", "Digital Journal"].map((item, index) => (
             <li key={index}>
               <Link
                 to={`/${item.toLowerCase().replace(" ", "-")}`}

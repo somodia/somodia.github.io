@@ -24,7 +24,6 @@
 
   /* Colors */
   --color-highlighted: light-dark(#31aa2f, var(--yellow));
-  --color-background: light-dark(#fffbfc, var(--gray-9));
   --color-background-button: light-dark(
     rgba(0, 0, 0, 0.05),
     rgba(255, 255, 255, 0.05)

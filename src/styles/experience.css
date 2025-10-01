@@ -1,0 +1,93 @@
+
+
+.section-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #7a3b69;
+}
+
+.theme-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+
+.theme-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.exp-card {
+  background: white;
+  border: 1px solid #f1d1dc;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.exp-top {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.exp-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.exp-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exp-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.exp-category {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.exp-description {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  margin-left: 0; /* ensures it aligns with left of card */
+}
+
+.exp-org {
+    font-size: 0.95rem;
+}
+.exp-time {
+    font-size: 0.85rem;
+}
+
+.exp-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}

@@ -18,9 +18,9 @@ const Sidebar = ({ theme }) => {
           I'm Alexandra, an engineer and musician at the University of Southern California. Welcome to my online diary!
         </p>
         <div>
-          <h4>Latest shenanigans</h4>
+          <h4></h4>
           <ul style={{ listStyleType: "none", paddingLeft: "0", fontSize: "14px", lineHeight: "1.8" }}>
-            <li>Makers Fall 2024 Showcase</li>
+            <li>Makers Spring 2025 Showcase</li>
             <li>MTR Fall 2024 Show: Falsettos</li>
             <li>Summer in North Carolina</li>
           </ul>
